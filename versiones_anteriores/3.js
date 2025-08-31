@@ -51,4 +51,4 @@ async function scrapePages(start, end) {
 
 // Ejemplo de cómo ejecutar la función de scraping (actualmente comentado).
 // Para usarlo, descomenta la línea y ajusta el rango de páginas que te interese.
-// scrapePages(1400090033, 1400090043);
+scrapePages(1400090033, 1400090043);
