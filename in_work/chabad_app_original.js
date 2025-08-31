@@ -9,9 +9,7 @@ async function run() {
     const j = await page.$$eval(
         'main ',
         (results) => results.map((el) => {
-            //const img = el.querySelector('img')?.getAttribute('src') || null;
             const title = el.querySelector('p')?.innerText || null;
-            // const link = el.querySelector('a.poly-component__title')?.href || null;
             const text = el.querySelector('div.PageView')?.innerText || null;
             return { title, text };
         })
